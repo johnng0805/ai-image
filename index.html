@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Search "HTML Boilerplate" for more info on recommend HTML template, and why we use these <meta> tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--Link jQuery library to your html-->
+    <!--You can also download jQuery and link it locally, place it in js folder-->
+    <!-- <script src="./js/jquery-3.7.1.min.js"></script> -->
+    <!--vscode intellisense will not work if you link through CDN, recommend downloading it locally-->
+  </head>
+  <body>
+    <form
+      action="https://localhost:3000/post/image"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <div class="input-container">
+        <input
+          type="file"
+          name="example_images"
+          accept="image/*"
+          id="image-input"
+          multiple
+        />
+        <!--accept only images (png, jpg, jpeg, gif, svg, webp)-->
+        <!--multiple means you can select many files at once-->
+        <!--all files will be sent in array format: [binary, binary, ...]-->
+
+        <div class="checkbox-container">
+          <!--class property is used to wrap css properties and does not have to be unique among elements like id-->
+          <!--div element can be used as wrapper/container for styling like spacing, padding, ...-->
+          <div class="checkbox-group">
+            <input type="checkbox" name="example_checkbox" id="checkbox1" />
+            <label for="checkbox1">Attribute</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="example_checkbox" id="checkbox2" />
+            <label for="checkbox2">Attribute</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="example_checkbox" id="checkbox3" />
+            <label for="checkbox3">Attribute</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="example_checkbox" id="checkbox4" />
+            <label for="checkbox4">Attribute</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="example_checkbox" id="checkbox5" />
+            <label for="checkbox5">Attribute</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="example_checkbox" id="checkbox6" />
+            <label for="checkbox6">Attribute</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="example_checkbox" id="checkbox7" />
+            <label for="checkbox7">Attribute</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="example_checkbox" id="checkbox8" />
+            <label for="checkbox8">Attribute</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="example_checkbox" id="checkbox9" />
+            <label for="checkbox9">Attribute</label>
+          </div>
+        </div>
+
+        <!--All inputs can have the same name-->
+        <!--Inputs with same name will be interpret as array-->
+        <!--example_checkbox: [0, 0, 0, ...]-->
+
+        <button type="submit">Submit</button>
+        <!--Alternativly, you can use input element as a button (within <form> only)-->
+        <!-- <input type="submit" value="Submit" /> -->
+      </div>
+    </form>
+    <div class="image-container">
+      <img src="" alt="" id="image-preview" />
+      <!--image preview will be displayed here-->
+      <!--Here you need scripting to display your returned images-->
+      <!--More on that later ;)-->
+    </div>
+    <script>
+      /* Here you can write your custom JavaScript.
+      It is recommend to place <script> at the bottom of the <body> to improve page load time.
+      Pay attention to the order of your scripts, if you are using jQuery, make sure it is loaded before your custom scripts.
+      (placing jQuery CDN linking before using <script> tag will ensure jQuery is loaded before your custom scripts)
+       */
+
+      /* https://www.w3schools.com/jquery/default.asp */
+      /* Spend some time going through the tutorial ;) */
+      /* You can mix jQuery language and vanilla javascript when coding */
+    </script>
+  </body>
+</html>

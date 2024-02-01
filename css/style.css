@@ -1,0 +1,23 @@
+form {
+  display: flex; /* flexbox is used to expand the form to the full width of the page */
+  flex-direction: column; /* flex-direction is used to stack the form elements vertically */
+  align-items: center; /* align-items is used to center the form horizontally */
+  justify-content: center; /* justify-content is used to center the form vertically */
+  margin-top: 20px;
+}
+
+.input-container {
+  display: block; /* display: block is used to stack the input elements vertically */
+  /* border: 1px solid #ccc; */ /* uncomment this to visualize how elements are placed */
+}
+
+.checkbox-container {
+  margin: 20px 0 10px 0;
+  /* border: 1px solid #ccc; */
+}
+
+.checkbox-group {
+  width: 100%;
+  padding-bottom: 10px;
+  /* border: 1px solid #ccc; */
+}
